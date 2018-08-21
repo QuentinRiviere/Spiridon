@@ -6,6 +6,7 @@ let router = {
                 if (!exists) {
                     fs.mkdir(path + 'app/routes', () => {
                         router.readFiles().then(result => {
+                            console.log('ok');
                             resolv(result);
                         }).catch(err => {
                             console.log(err);
@@ -30,11 +31,15 @@ let router = {
                 if (err) {
                     reject();
                 }
-                for (let i = 0; i < items.length; i++) {
-                    array.push(require('./routes/' + items[i]));
-                    if (i === items.length - 1) {
-                        resolv(array);
+                if (items.length > 0) {
+                    for (let i = 0; i < items.length; i++) {
+                        array.push(require('./routes/' + items[i]));
+                        if (i === items.length - 1) {
+                            resolv(array);
+                        }
                     }
+                } else {
+                    console.log('No routes defined');
                 }
             });
         });

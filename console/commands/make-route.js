@@ -1,7 +1,6 @@
 const fs = require("fs");
 let makeRoute = {
     launch: (route, path) => {
-        console.log(route, path);
         fs.exists(path + "app/routes/", (exists) => {
             if (!exists) {
                 fs.mkdir(path + 'app/routes', () => {

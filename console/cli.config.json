@@ -4,6 +4,11 @@
       "value": null,
       "command": "--h , -h",
       "desc": "Display commands infos"
+    },
+    "make-route" : {
+      "value" : null,
+      "command" : "--make-route",
+      "desc" : "test command"
     }
   }
 }

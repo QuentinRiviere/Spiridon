@@ -1,15 +1,11 @@
 {
   "name" : "Spiridon",
   "endpoint" : "/",
+  "port" : 3000,
   "commands" : {
     "test" : {
       "value" : null,
       "command" : "--test",
-      "desc" : "test command"
-    },
-    "make-route" : {
-      "value" : null,
-      "command" : "--make-route",
       "desc" : "test command"
     }
   }
