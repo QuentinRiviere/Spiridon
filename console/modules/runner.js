@@ -19,6 +19,8 @@ let runner = {
                     } else if (value.includes('--') && !Object.keys(args).includes(value.replace('--', ''))) {
                         console.log("Unknow argument '" + value + "' used");
                         throw BreakException;
+                    }else{
+
                     }
                 }
             });

@@ -10,7 +10,6 @@ let makeRoute = {
                 makeRoute.createFile(route, path);
             }
         });
-
     },
     createFile: (route, path) => {
         fs.readFile(path + "console/templates/routes/crud.js", 'utf8', (err, data) => {

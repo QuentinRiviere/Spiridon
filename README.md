@@ -13,3 +13,11 @@ Install dependencies : <br>
 
 Run <code>npm link</code> as super user.  
 Then run <code>spi --help</code> in your project directory to test if command line interface is installed.  
+
+##### # Create routes 
+
+<code>spi --make-route [route-name]</code> (routes located in app/routes)
+
+##### # Launch server
+
+In app/ <code>node index.js</code> (temporary)

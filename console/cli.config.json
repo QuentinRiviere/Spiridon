@@ -7,8 +7,13 @@
     },
     "make-route" : {
       "value" : null,
-      "command" : "--make-route",
-      "desc" : "test command"
+      "command" : "--make-route [route-name]",
+      "desc" : "Create route "
+    },
+    "run" : {
+      "value" : null,
+      "command" : "run",
+      "desc" : "run"
     }
   }
 }

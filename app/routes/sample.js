@@ -18,4 +18,5 @@ sample
     .delete('/sample/delete/:id', function (req, res) {
         res.send('DELETE method for sample api.')
     });
+
 module.exports = sample;
