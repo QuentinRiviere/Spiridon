@@ -1,0 +1,11 @@
+{
+  "name" : "Spiridon",
+  "endpoint" : "/",
+  "commands" : {
+    "test" : {
+      "value" : null,
+      "command" : "--test",
+      "desc" : "test command"
+    }
+  }
+}

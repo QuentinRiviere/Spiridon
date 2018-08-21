@@ -2,7 +2,7 @@
   "name": "spiridon",
   "version": "1.0.0",
   "description": "Spiridon",
-  "main": "app.js",
+  "main": "app/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,7 +16,13 @@
     "url": "https://github.com/QuentinRiviere/Spiridon/issues"
   },
   "homepage": "https://github.com/QuentinRiviere/Spiridon#readme",
+  "bin": {
+    "spi": "console/cli.js"
+  },
   "dependencies": {
     "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "console.table": "^0.10.0"
   }
 }

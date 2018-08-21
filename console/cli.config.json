@@ -1,0 +1,9 @@
+{
+  "default" : {
+    "help": {
+      "value": null,
+      "command": "--h , -h",
+      "desc": "Display commands infos"
+    }
+  }
+}
