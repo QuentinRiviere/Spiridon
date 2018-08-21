@@ -4,10 +4,16 @@ let runner = {
     launch : (args) => {
         let BreakException = {};
         try {
+            console.log(process.argv);
+            if(process.argv.length < 3){
+                console.log('No arguments provided ... 🤔')
+            }
             process.argv.forEach(function (value, index, array) {
-                if (index > 0) {
+                if (index > 1) {
                     if (value.includes('--') && Object.keys(args).includes(value.replace('--', '')) && process.argv.length > index) {
                         if (process.argv[(index + 1).toString()].includes('--') === false) {
+                            args[value.replace('--', '')]["active"] = true;
+                            // console.log(process.argv[(index + 1).toString()]);
                             args[value.replace('--', '')].value = process.argv[(index + 1).toString()];
                         } else {
                             args[value.replace('--', '')] = true;

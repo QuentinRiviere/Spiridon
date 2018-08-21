@@ -20,7 +20,8 @@
     "spi": "console/cli.js"
   },
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "mkdirp": "^0.5.1"
   },
   "devDependencies": {
     "console.table": "^0.10.0"
